@@ -8,7 +8,7 @@ function smallestMultiple(max) {
       if(n%i===0) {
       counter += 1;
         if(counter===max) {
-          return n;
+          evenlyDivided = false;
         }
       }
       else {
@@ -17,6 +17,6 @@ function smallestMultiple(max) {
       }
     }
   }
+  return n;
 }
 smallestMultiple(10);
-
