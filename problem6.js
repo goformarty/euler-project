@@ -1,11 +1,11 @@
-function sumSquareDifference() {
-  var sumOfSquares = 0; 
+function sumSquareDifference(n) {
   var sum = 0;
+  var sumOfSquares = 0;
   
-  for (var i=1; i<101; i++) {
+  for (var i=1; i<=n; i++) {
   sumOfSquares += i * i;
 }
-  for (var j=1; j<101; j++) {
+  for (var j=1; j<=n; j++) {
   sum += j;
 }
   var squareOfSum = sum * sum;
@@ -13,4 +13,4 @@ function sumSquareDifference() {
   
 }
 
-sumSquareDifference();
+sumSquareDifference(100);
