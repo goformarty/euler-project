@@ -21,7 +21,7 @@ function palindrome() {
     var stringMultiply = multiply.toString();
     var reversedMultiply = reverseString(stringMultiply);
     if (reversedMultiply === stringMultiply) {
-      palindromeArray.push(x*y);
+      palindromeArray.push(multiply);
     }
   }
 }
