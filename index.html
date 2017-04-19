@@ -3,9 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Euler Project Solutions</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="problem">
+	<div class="title">
+		<h1>Project Euler</h1>
+		<h5>Solutions by Marty Stepien</h5>
+	</div>
+	<div class="description">
+		<h5>What is Problem Eueler?</h5>
+		<p>Project Euler is a website with a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.</p>
+		<p>You can visit and join here: <a href="https://projecteuler.net/">https://projecteuler.net</a></p>
+	</div>
+	<div class="problemContainer">
+		<h2>Problem 1</h2>
+		<h4>Multiples of 3 and 5</h4>
+		<br />
+		<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below given number.</p>
+		<br />
+		<input id="input1" type="number" min="1" max="10000" placeholder="Enter your number" />
+		<button id="btn1">Calculate</button>
+		<br /><br />
+		<h5 class="answer">Answer: <span id="answer1"></span></h5>
+	</div>
+
+	<div class="problemContainer">
 		<h2>Problem 1</h2>
 		<h4>Multiples of 3 and 5</h4>
 		<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below given number.</p>
@@ -13,6 +35,7 @@
 		<button id="btn1">Calculate</button>
 		<p>Answer: <span id="answer1"></span></p>
 	</div>
+
 	<script src="main.js"></script>
 </body>
 </html>

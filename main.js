@@ -11,6 +11,9 @@ function problem1() {
 	if (max === "") {
 		return "Uoh-ooh, you forgot to specify a number!";
 	}
+	if(max > 10000) {
+		return "Please specify a number between 0-10000";
+	}
 	for(var i = 1; i< max; i++){
 		if(i % 3 === 0 || i % 5 === 0){
 			sum += i;
