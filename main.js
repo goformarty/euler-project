@@ -85,33 +85,91 @@ btn4.onclick = function() {
 // PROBLEM 4: FUNCTION
 function problem4() {
 	var max = document.getElementById('input4').value;
-
-	// function to get the number range
-	var a = function(max) {
-		var digits = [];
-		for (var i = 0; i<max; i++) {
-			digits.push(9);
-		}
-		return [Number(digits.join('')), Number(digits.slice(0, -1).join(''))];
-	};
-	var b = a;
-
-	var palindromeArray = [];
 	if (max === "") {
 		return "Uoh-ooh, you forgot to specify both numbers!";
 	}
-	if(max > 10) {
-		return "Please specify numbers between 0-10";
+	if(max > 5) {
+		return "Please specify a number between 0-5";
 	}
-	for (var x=a[0]; x>a[1]; x--) {
-		for (var y = b[0]; y>b[1]; y--) {
-			var multiply = x * y;
-			var stringMultiply = multiply.toString();
-			var reversedMultiply = reverseString(stringMultiply);
-			if (reversedMultiply === stringMultiply) {
-				palindromeArray.push(multiply);
+	var i, n, m, d, inf, sup, limit, number = 0;
+	for (i = 1; i < max; i += 1) {
+		number = 10 * number + 9;
+	}
+	inf = number;
+	sup = 10 * number + 9;
+
+	function isPalindromic(n) {
+		var p = 0, q = n, r;
+		while (n > 0) {
+			r = n % 10;
+			p = 10 * p + r;
+			n = Math.floor(n / 10);
+		}
+		return p === q;
+	}
+
+	for (n = sup * sup, m = inf * inf; n > m; n -= 1) {
+		if (isPalindromic(n)) {
+			limit = Math.ceil(Math.sqrt(n));
+			d = sup;
+			while (d >= limit) {
+				if (n % d === 0 && n / d > inf) {
+					return n;
+				}
+				d -= 1;
 			}
 		}
 	}
-	return Math.max.apply(null, palindromeArray);
+	return NaN;
 }
+
+// PROBLEM 5: DOM
+var btn5 = document.getElementById("btn5");
+btn5.onclick = function() {
+	document.getElementById("answer5").innerHTML = problem5();
+};
+
+// PROBLEM 5: FUNCTION
+function problem5() {
+	var max = document.getElementById('input5').value;
+	if (max === "") {
+		return "Uoh-ooh, you forgot to specify a number!";
+	}
+	if(max > 100) {
+		return "Please specify a number between 0-100";
+	}
+
+
+	var i, n = 1;
+
+	function largestPower(n, max) {
+		var p, e = 2, largest = n;
+		while ((p = Math.pow(n, e)) <= max) {
+			largest = p;
+			e += 1;
+		}
+		return largest;
+	}
+
+	function isPrime(n) {
+		var i, max = Math.ceil(Math.sqrt(n));
+        // since the main loop generates odd numbers only
+        // we can start testing primality dividing by 3
+        for (i = 3; i <= max; i += 2) {
+        	if (n % i === 0) {
+        		return false;
+        	}
+        }
+        return true;
+    }
+
+    for (i = 3; i <= max; i += 2) {
+    	if (isPrime(i)) {
+    		n *= largestPower(i, max);
+    	}
+    }
+
+    return n * largestPower(2, max);
+}
+
+
