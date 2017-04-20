@@ -22,3 +22,35 @@ function problem1() {
 	return sum;
 }
 
+// PROBLEM 2: DOM
+var btn2 = document.getElementById("btn2");
+btn2.onclick = function() {
+	document.getElementById("answer2").innerHTML = problem2();
+};
+
+// PROBLEM 2: FUNCTION
+function problem2() {
+	var max = document.getElementById('input2').value;
+	var x = 0;
+	var y = 1;
+	var sum;
+	var total = 0;
+	var array = [];
+	if (max === "") {
+		return "Uoh-ooh, you forgot to specify a number!";
+	}
+	if(max > 5000000) {
+		return "Please specify a number between 0-5000000";
+	}
+	for (sum=0; sum<max; sum=x+y) {
+		if (sum%2 === 0) {
+			total += sum;
+			array.push(sum);
+		}
+		x=y;
+		y=sum;
+	}
+	return total;
+}
+
+
