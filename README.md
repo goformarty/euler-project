@@ -1,11 +1,13 @@
 # euler-project
-Please see live version of my project here: 
+Interactive web application that allows user to get solutions for problems from Project Euleur.
+
+Please see live version here: 
 
 ## Goal
 
-The goal of this project was to use JavaScipt to write algorythms for solving problems from Project Euler website.
+The goal of this project was to use JavaScipt to write algorithms for solving problems from Project Euler website.
 
-> ### About Project Eueler
+> #### About Project Eueler
 >
 > Project Euler is a series of challenging mathematical/computer programming problems that require mathematical insights and the use of a computer and programming skills to be solved.
 > 
@@ -13,6 +15,10 @@ The goal of this project was to use JavaScipt to write algorythms for solving pr
 
 
 ## Skills used
+
+- vanilla JavaScript
+- algorithms solving
+- DOM Manipulation
 > List of skills with descriptions
 >
 > what I learned during this
