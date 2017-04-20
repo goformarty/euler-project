@@ -1,9 +1,18 @@
 # euler-project
-Solutions to problems from Euler Project https://projecteuler.net/
+Please see live version of my project here: 
 
-Please see live version here: 
+## Goal
 
-## Skills
+The goal of this project was to use JavaScipt to write algorythms for solving problems from Project Euler website.
+
+> ### About Project Eueler
+>
+> Project Euler is a series of challenging mathematical/computer programming problems that require mathematical insights and the use of a computer and programming skills to be solved.
+> 
+> You can visit, read more and join it here: https://projecteuler.net/
+
+
+## Skills used
 > List of skills with descriptions
 >
 > what I learned during this
