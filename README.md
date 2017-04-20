@@ -1,7 +1,7 @@
 # euler-project
 Interactive web application in JavaScript that allows user to calculate solutions for problems from Project Euler.
 
-Please see live version here: 
+Please see live version here: https://goformarty.github.io/euler-project/
 
 ## Goal
 
