@@ -1,5 +1,5 @@
 # euler-project
-Interactive web application that allows user to get solutions for problems from Project Euleur.
+Interactive web application in JavaScript that allows user to calculate solutions for problems from Project Euler.
 
 Please see live version here: 
 
@@ -14,27 +14,9 @@ The goal of this project was to use JavaScipt to write algorithms for solving pr
 > You can visit, read more and join it here: https://projecteuler.net/
 
 
-## Skills used
+## Skills
 
-- vanilla JavaScript
-- algorithms solving
-- DOM Manipulation
-> List of skills with descriptions
->
-> what I learned during this
-> project
-
-### DOM Manipulation
-
-Descriptive paragraph of how capable you are at this skill.
-
-- I achieved A during my work at B (job, or otherwise)
-- I contributed to the growth of X while doing Y (job, or otherwise)
-- I built this, made this, broke this, fixed this, etc.
-- A link to some on-line evidence (blogs, videos, articles, etc.)
-- A description of the development of that skill in you ("I've been fixing PCs for friends and family since I was like six or whatever")
-
-
-### Algorythms
-
-- I learned
+- HTML5 & CSS3;
+- vanilla JavaScript;
+- algorithms;
+- DOM Manipulation;
