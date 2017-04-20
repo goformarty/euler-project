@@ -46,7 +46,7 @@ p {
 
 .title:after {
 	content: " ";
-	background-image: url(wavy-seperator.svg);
+	background-image: url(wavy-seperator2.png);
 	background-repeat: repeat-x;
 	background-size: 84px 13px;
 	top: 200px;
