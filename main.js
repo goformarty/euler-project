@@ -172,4 +172,43 @@ function problem5() {
     return n * largestPower(2, max);
 }
 
+// PROBLEM 6: DOM
+var btn6 = document.getElementById("btn6");
+btn6.onclick = function() {
+	document.getElementById("answer6").innerHTML = problem6();
+};
 
+// PROBLEM 6: FUNCTION
+function problem6() {
+	var max = document.getElementById('input6').value;
+	if (max === "") {
+		return "Uoh-ooh, you forgot to specify a number!";
+	}
+	if(max > 200) {
+		return "Please specify a number between 0-200";
+	}
+
+	function squareSum(max) {
+		var i, s = 1,
+		e = Math.log(max) / Math.LN10;
+        // special case: max is a power of 10
+        if (e - (e << 0) === 0) {
+        	s = max * (max >> 1) + (max >> 1);
+        }
+        else {
+        	for (i = 2; i <= max; i += 1) {
+        		s += i;
+        	}
+        }
+        return s * s;
+    }
+    function sumSquare(max) {
+    	var i, s = 1;
+    	for (i = 2; i <= max; i += 1) {
+    		s += i * i;
+    	}
+    	return s;
+    }
+
+    return squareSum(max) - sumSquare(max);
+}
