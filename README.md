@@ -1,13 +1,13 @@
 # euler-project
 Interactive web application in JavaScript that allows user to calculate solutions for problems from Project Euler.
 
-Please see live version here: 
+Please see live demo here: https://goformarty.github.io/euler-project/
 
 ## Goal
 
 The goal of this project was to use JavaScipt to write algorithms for solving problems from Project Euler website.
 
-> #### About Project Eueler
+> #### About Project Euler
 >
 > Project Euler is a series of challenging mathematical/computer programming problems that require mathematical insights and the use of a computer and programming skills to be solved.
 > 
@@ -19,4 +19,4 @@ The goal of this project was to use JavaScipt to write algorithms for solving pr
 - HTML5 & CSS3;
 - vanilla JavaScript;
 - algorithms;
-- DOM Manipulation;
+- DOM manipulation;
