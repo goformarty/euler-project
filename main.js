@@ -221,7 +221,7 @@ btn7.onclick = function () {
 	document.getElementById("answer7").innerHTML = problem7();
 }
 
-// PROBLEM 6: FUNCTION
+// PROBLEM 7: FUNCTION
 function problem7() {
 
 	var num = document.getElementById('input7').value;
@@ -248,4 +248,10 @@ function problem7() {
 		}
 		return true;
 	}
+}
+
+// PROBLEM 8: DOM
+var btn8 = document.getElementById("btn8");
+btn8.onclick = function () {
+	document.getElementById("answer8").innerHTML = problem8();
 }
