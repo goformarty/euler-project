@@ -1,13 +1,30 @@
-function getPrimes(max) {
-    var sieve = [], i, j, primes = [];
-    for (i = 2; i <= max; ++i) {
-        if (!sieve[i]) {
-            // i has not been marked -- it is prime
-            primes.push(i);
-            for (j = i << 1; j <= max; j += i) {
-                sieve[j] = true;
-            }
-        }
+function isPrime(num) {
+    if (num < 2) {
+      return false;
     }
-    return primes;
-}
+    
+    for (var i = 2; i <= num/2; i++) {
+      if(num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  isPrime(2);
+  
+  function findPrime(num) {
+    var primes = [];
+    var counter = 2;
+    while (primes.length < num) {
+      if(isPrime(counter)) {
+        primes.push(counter);
+      }
+      counter++;
+    }
+    return primes[num - 1];
+  }
+  
+  findPrime(10001);
+  
+  
